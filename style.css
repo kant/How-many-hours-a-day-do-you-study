@@ -1,7 +1,17 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-width: 1000px;
+}
+
 #today{
     width: 100%;
     height: 30px;
     text-align: center;
+    color: black;
+    text-shadow:-1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
 }
 
 #mid{
@@ -12,7 +22,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    background-color: white;
+    border-radius: 200px;
+    border:1px solid grey
 }
 
 #timer{
@@ -24,28 +36,51 @@
     display: contents;
 }
 
-button{
+li button,
+#mid button{
     width: 48px;
     height: 24px;
+    background-color: gray;
+    color: white;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 #buttons{
     margin-top:30px
 }
 
-#record{
-    position: absolute;
+#history{
+    position: fixed;
     left: 0;
     top:0;
-    min-height: 100%;
+    height: 100%;
     width:300px;
-    background-color: #e9e9e9;
+    background-color: transparent;
     display: block;
     margin:0;
     padding:0;
 }
 
+#history:hover{
+    overflow-y: auto;
+}
+
 #input{
     margin-top:20px;
     width: 80px;
+}
+
+li{
+    font-weight: 600;
+    text-shadow:-1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+}
+
+#more{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    position: absolute;
+    left: 0px;
+    top:0;    
+    z-index: 1;
 }
