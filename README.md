@@ -4,7 +4,7 @@
 * <a href="background.md">Background Image</a>  
 * <a href="timer.md">Timer</a>  
 * <a href="localstorage.md">`localStorage`(input)</a>
-* <a href="problems.md">Problem</a>  
+* <a href="problem.md">Problem</a>  
 <br>
 
 ## Timer recording web
