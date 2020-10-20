@@ -1,5 +1,4 @@
 # Clock
-
 한국의 현재 시간을 가져와서 표시합니다.  
 글자의 테두리에 `text-shadow`효과를 주어 어두운 배경에서도 글자가 또렷히 보이도록 설정했습니다.  
 ![clock](/readmeImages/2.PNG)
@@ -12,7 +11,6 @@
 <br>
 
 ## Code
----
 ```javascript
 function getTime(){
     const date=new Date();

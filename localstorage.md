@@ -21,7 +21,6 @@ function makeList(){
 <br>
 
 ## Save it into local storage
----
 `localStorage`에 저장하기 위해서, `records`라는 임의의 배열을 만들고 배열과 `localStorage`를 동기화 하는 식으로 하였다. 다음은 그 과정을 추가한 `makeList()`함수이다.
 ```js
 let records=[]
@@ -55,7 +54,6 @@ function makeList(){
 <br>
 
 ## Delete button
----
 아래는 위에 보이는 `delBtn`의 `addEventListner`에 들어간 함수의 정의이다.  
 `delBtn`을 누르면 타겟이 되는 버튼의 `parentNode`를 삭제하고 이것을 `filter`을 이용하여, 타겟이 되는 버튼을 제외한 배열을 만들고 그것을 기존에 `records`배열에 넣어, 다시 저장하는 방식이다.
 
@@ -73,7 +71,6 @@ function deleteRec(event){
 <br>
 
 ## Load it from local storage
----
 불러올 때(새로고침할 때)는 `records`배열에서 아이템을 가져온 후, `string`의 형태로 저장된 `localStorage`의 정보들을 다시 `object`형태로 바꾸어 가져온 후, 그것을 위한 공간들을 save때 했던 것처럼 다시 만들어 주면 된다.
 
 ```js

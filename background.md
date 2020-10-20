@@ -3,7 +3,6 @@
 <br>
 
 ## Keyframes
----
 ```css
 @keyframes fadeIn{
     0%{
@@ -29,7 +28,6 @@
 <br>
 
 ## Math.random
----
 `Math.random`을 이용해 백그라운드 이미지에 10개의 이미지가 임의로 나오도록 설정했습니다.
 
 ```javascript
@@ -41,8 +39,6 @@ background.style.backgroundImage=`url(images/background${random}.jpg)`
 
 
 ## setInterval
----
-
 `setInterval`안에 `setTimeout`을 집어넣어 주기적으로 `setTimeout`이 실행되도록 하였습니다.
 아래 보이는 `change`함수를 60초에 한번씩 실행시키며 2초동안 `fadeOut`함수를 사용해, 전의 이미지가 사라지고 다음 2초 후에는 `fadeIn`함수를 통해 새로운 이미지가 나타나게 했습니다.
 
