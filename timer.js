@@ -6,7 +6,7 @@ function storeTime(){
         localStorage.setItem('hours',hours)
         localStorage.setItem('minutes',minutes)
         localStorage.setItem('seconds',seconds)
-    },1)
+    },4)
 }
 
 function intimeEvent(){
@@ -22,7 +22,7 @@ function intimeEvent(){
             hours++
             minutes=0
         }
-    },1)
+    },4)
 }
 
 let inter=-1
@@ -60,7 +60,6 @@ let records=[]
 const history=document.querySelector("#history")
 function deleteRec(event){
     const li=event.target.parentNode
-    const no=Number(event.target)
     history.removeChild(li)
     const cleanRec=records.filter(function(rec){
         return rec.id!==parseInt(li.id)
@@ -114,7 +113,7 @@ function loadRecords(){
     if(loadedRecords!==null){
         const parsedRecords= JSON.parse(loadedRecords)
         records=parsedRecords
-        for(let i=1;i<records.length+1;i++){
+        for(let i=0;i<records.length;i++){
             const li=document.createElement("li")
             const delBtn=document.createElement("button")
             const when=document.createElement("span")
@@ -123,11 +122,11 @@ function loadRecords(){
             delBtn.addEventListener("click",deleteRec)
             delBtn.textContent="삭제"
             li.appendChild(when)
-            when.textContent=records[i-1].text
+            when.textContent=records[i].text
             li.appendChild(howMany)
-            howMany.textContent=records[i-1].number
+            howMany.textContent=records[i].number
             li.appendChild(delBtn)
-            li.id= records[i-1].id
+            li.id= records[i].id
             history.appendChild(li)
         }
     }

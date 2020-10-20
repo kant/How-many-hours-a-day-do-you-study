@@ -1,9 +1,39 @@
 html{
     height: 100%;
+    overflow: hidden;
+    background-color: #e9e9e9;
 }
 
 body{
     min-width: 1000px;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    } 
+}
+
+#background{
+    animation: fadeIn 2s;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
 }
 
 #today{
@@ -83,4 +113,5 @@ li{
     left: 0px;
     top:0;    
     z-index: 1;
+    font-weight: 700;
 }
