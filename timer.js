@@ -68,10 +68,19 @@ function deleteRec(event){
     saveRec()
 }
 
+let recordsId=[] //deduplication
 function makeList(){
     const li=document.createElement("li")
     const delBtn=document.createElement("button")
-    const newId=records.length+1
+    let newId=records.length+1
+    function deduplication(){ //deduplication
+        for(let i=1;i<=recordsId[recordsId.length-1];i++){
+            if(newId===i){
+                newId++
+            }
+        }
+    }
+    deduplication() //deduplication
     const when=document.createElement("span")
     const howMany=document.createElement("span")
     howMany.style.margin="20px"
@@ -90,7 +99,9 @@ function makeList(){
         number:howMany.textContent,
         id:newId
     }
+    const id=recObj.id //deduplication
     records.push(recObj);
+    recordsId.push(id); //deduplication
     saveRec() 
 }
 
@@ -128,6 +139,7 @@ function loadRecords(){
             li.appendChild(delBtn)
             li.id= records[i].id
             history.appendChild(li)
+            recordsId.push(records[i].id) //deduplication
         }
     }
 }

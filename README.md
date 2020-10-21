@@ -4,10 +4,10 @@
 * <a href="background.md">Background Image</a>  
 * <a href="timer.md">Timer</a>  
 * <a href="localstorage.md">`localStorage`(input)</a>
-* <a href="problem.md">Problem</a>  
+* <a href="problems.md">Problems</a>  
 <br>
 
-## Timer recording web
+## Timer recording App
 I am a beginner.:blush:  
 Doing it for pracetice.:smiley:  
 Please give me a lot of feedbacks.:grin:  
