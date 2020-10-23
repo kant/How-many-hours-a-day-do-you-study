@@ -9,7 +9,7 @@
 
 ## Timer recording App
 I am a beginner.:blush:  
-Doing it for pracetice.:smiley:  
+Doing it for practice.:smiley:  
 Please give me a lot of feedbacks.:grin:  
 Made it to record my study time.  
 <br>
